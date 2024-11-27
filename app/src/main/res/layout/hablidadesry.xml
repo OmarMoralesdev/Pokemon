@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="#FFF8E1"
+    android:backgroundTint="#FFEB3B">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Header section for card type -->
+        <TextView
+            android:id="@+id/cardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRAINER"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Image placeholder -->
+        <ImageView
+            android:id="@+id/abilityImage"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/cardType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+        <!-- Title for Pokémon ability -->
+        <TextView
+            android:id="@+id/abilityTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="No. 2 Trainer"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintTop_toBottomOf="@id/abilityImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Description of the ability -->
+        <TextView
+            android:id="@+id/abilityDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="If you won this card at the 2006 Pokémon Trading Card Game World Championships, you may return to battle the best in 2009."
+            android:textSize="12sp"
+            android:textColor="#757575"
+            app:layout_constraintTop_toBottomOf="@id/abilityTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            android:padding="8dp" />
+
+        <!-- Footer text -->
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CONGRATULATIONS!"
+            android:textSize="12sp"
+            android:textColor="#D32F2F"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintTop_toBottomOf="@id/abilityDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
